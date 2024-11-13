@@ -53,6 +53,7 @@
         <div class="item" data-value="4">4. Hafta</div>
         <div class="item" data-value="5">5. Hafta</div>
         <div class="item" data-value="6">6. Hafta</div>
+        <div class="item" data-value="7">7. Hafta</div>
       </div>
       <div data-value="1" class="body" style="overflow-y: scroll">
         Birinci hafta Dev C++ programı kullanımı anlatıldı. 
@@ -311,6 +312,37 @@
               
               printf("tek sayida tekrar eden eleman : %d", xor);
           }
+          </code>
+        </pre>
+      </div>
+      <div data-value="7" class="body" style="overflow-y: scroll">
+        <h2>Koddaki Hataları Bulma</h2>
+        <p>Aşağıdaki kodda çeşitli hatalar mevcuttur. Bunları tespit ediniz.</p>
+        <pre>
+          <code class="language-c">
+          #include &lt;stdio.h>
+
+          int main() {
+              int n;
+              printf("Dizi boyutunu girin: ")
+              scanf("%d", n);
+          
+              int arr[n]; // Kullanıcıdan alınan boyuta göre dizi tanımlama
+              int sum = 0;
+              float average;
+          
+              printf("Dizi elemanlarını girin:\n");
+              for (int i = 0; i <= n; i++) {
+                  scanf("%d", arr[i]);
+                  sum += arr[i];
+              }
+          
+              average = sum / n;
+              printf("Dizinin ortalaması: %f\n", average);
+              
+              return 0;
+          }
+
           </code>
         </pre>
       </div>

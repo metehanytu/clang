@@ -28,6 +28,10 @@ int find_prime_factor(int a) {
 }
 
 void find_prime_factors(int a) {
+    if (a < 2) {
+        printf("1");
+        return;
+    }
     while(1) {
         if (a == find_prime_factor(a)) {
             printf("%d\n", a);
@@ -44,3 +48,4 @@ int main(int argc, char *argv[]) {
   int a = 1201289;
   find_prime_factors(a);
 }
+
